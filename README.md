@@ -1,7 +1,7 @@
 #devBox-Ubuntu_Trusty_14.04_LTS_x64
 A decent box for general PHP development.
 
-This box was generated using https://puphpet.com/
+_This box was generated using https://puphpet.com/_
 
 #### SETUP
 1.) Create a project folder (example: _myProject_).
@@ -18,8 +18,22 @@ This box was generated using https://puphpet.com/
 
 7.) Inside of the box, navigate to <code>/var/www/project/</code>. This is the server root directory. From here you most likely want to initialize a new git repo and start your development. 
 
+#### NOTES
+##### Sequel Pro Connections
+When connecting to the out-of-the-box database that comes with this box, use these settings with SQL Pro: 
+- MySQL Host: 127.0.0.1
+- Username: dbuser
+- Password: 123
+- Database: NA
+- Port: NA
+- SSH Host: project.dev
+- SSH User: vagrant
+- SSH Password: *see below
+- SSH Port: NA
 
-#### Box Settings
+_If you don't know the SSH password is, use <code>vagrant ssh</code> to login to the box and then use <code>passwd</code> to reset the password to a known value._
+
+#### BOX SETTINGS
 
 __Deploy Target:__ Local
 
