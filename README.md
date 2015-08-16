@@ -19,6 +19,12 @@ _This box was generated using https://puphpet.com/_
 7.) Inside of the box, navigate to <code>/var/www/project/</code>. This is the server root directory. From here you most likely want to initialize a new git repo and start your development. 
 
 #### NOTES
+##### Trouble with <code>vagrant up</code>
+VirtualBox can struggle with multiple instances of the same box, even if their not running at the same time. You're likely to run into this issue if you're in the habit of starting a new box for each project. 
+
+If you run into this issue, open VirtualBox and remove any previous instances of this box and then try to <code>vagrant up</code> again.
+
+
 ##### Sequel Pro Connections
 When connecting to the out-of-the-box database that comes with this box, use these settings with SQL Pro: 
 - MySQL Host: 127.0.0.1
